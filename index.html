@@ -4,22 +4,270 @@
   <title>南一國小 Wordwall</title>
 </head>
 <body>
-  <div class="banner">hellow word</div>
+  <div class="banner">南一國小線上互動平台入口網</div>
   <div class="container">
-    <div class="subject_group">
-      <div class="subject chinese"></div>
-      <div class="subject"></div>
-      <div class="subject"></div>
+    <div class="selector_box">
+      <div class="selector">
+        <div class="title">選擇學期</div>
+        <div id="semester" class="button_box">
+          <div class="button" onclick="yearSelector('semester', 0)">112上</div>
+          <div class="button" onclick="yearSelector('semester', 1)">112下</div>
+        </div>
+      </div>
+      <div class="selector">
+        <div class="title">選擇範圍</div>
+        <div id="year" class="button_box">
+          <div class="button" onclick="yearSelector('year', 0)">1年級</div>
+          <div class="button" onclick="yearSelector('year', 1)">2年級</div>
+          <div class="button" onclick="yearSelector('year', 2)">3年級</div>
+          <div class="button" onclick="yearSelector('year', 3)">4年級</div>
+          <div class="button" onclick="yearSelector('year', 4)">5年級</div>
+          <div class="button" onclick="yearSelector('year', 5)">6年級</div>
+          <div class="button" onclick="subjectSelector('year', 6)">自然</div>
+          <div class="button" onclick="subjectSelector('year', 7)">社會</div>
+        </div>
+      </div>
     </div>
-    <div class="subject_group">
-      <div class="subject"></div>
-      <div class="subject"></div>
+    <div class="subject_wrapper">
+      <div id="year_options">
+        <div class="subject_box">
+          <div class="title">Wordwall</div>
+          <div id="wordwall" class="subject_group">
+            <div
+              class="subject chinese"
+              onclick="clickResource('國語', 'wordwall')"
+            >
+              國語
+            </div>
+            <div
+              class="subject math"
+              onclick="clickResource('數學', 'wordwall')"
+            >
+              數學
+            </div>
+            <div
+              class="subject life"
+              onclick="clickResource('生活', 'wordwall')"
+            >
+              生活
+            </div>
+            <div
+              class="subject science"
+              onclick="clickResource('自然', 'wordwall')"
+            >
+              自然
+            </div>
+            <div
+              class="subject socialStudies"
+              onclick="clickResource('社會', 'wordwall')"
+            >
+              社會
+            </div>
+          </div>
+        </div>
+        <div class="subject_box">
+          <div class="title">Kahoot!</div>
+          <div id="kahoot" class="subject_group">
+            <div
+              class="subject chinese"
+              onclick="clickResource('國語', 'kahoot')"
+            >
+              國語
+            </div>
+            <div class="subject math" onclick="clickResource('數學', 'kahoot')">
+              數學
+            </div>
+            <div class="subject life" onclick="clickResource('生活', 'kahoot')">
+              生活
+            </div>
+            <div
+              class="subject science"
+              onclick="clickResource('自然', 'kahoot')"
+            >
+              自然
+            </div>
+            <div
+              class="subject socialStudies"
+              onclick="clickResource('社會', 'kahoot')"
+            >
+              社會
+            </div>
+          </div>
+        </div>
+
+        <div class="subject_box">
+          <div class="title">Quizizz</div>
+          <div id="quizizz" class="subject_group">
+            <div
+              class="subject chinese"
+              onclick="clickResource('國語', 'quizizz')"
+            >
+              國語
+            </div>
+            <div
+              class="subject math"
+              onclick="clickResource('數學', 'quizizz')"
+            >
+              數學
+            </div>
+          </div>
+        </div>
+
+        <div class="subject_box">
+          <div class="title">Quizlet</div>
+          <div id="quizlet" class="subject_group">
+            <div
+              class="subject chinese"
+              onclick="clickResource('國語', 'quizlet')"
+            >
+              國語
+            </div>
+            <div
+              class="subject science"
+              onclick="clickResource('自然', 'quizlet')"
+            >
+              自然
+            </div>
+            <div
+              class="subject socialStudies"
+              onclick="clickResource('社會', 'quizlet')"
+            >
+              社會
+            </div>
+          </div>
+        </div>
+
+        <div class="subject_box">
+          <div class="title">Coggle</div>
+          <div id="coggle" class="subject_group">
+            <div
+              class="subject chinese"
+              onclick="clickResource('國語', 'coggle')"
+            >
+              國語
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="subject_options">
+        <div class="subject_box">
+          <div class="title">3年級</div>
+          <div id="3year" class="subject_group">
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('wordwall', 3)"
+            >
+              Wordwall
+            </div>
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('kahoot', 3)"
+            >
+              Kahoot!
+            </div>
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('quizizz', 3)"
+            >
+              Quizizz
+            </div>
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('quizlet', 3)"
+            >
+              Quizlet
+            </div>
+          </div>
+        </div>
+        <div class="subject_box">
+          <div class="title">4年級</div>
+          <div id="4year" class="subject_group">
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('wordwall', 4)"
+            >
+              Wordwall
+            </div>
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('kahoot', 4)"
+            >
+              Kahoot!
+            </div>
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('quizizz', 4)"
+            >
+              Quizizz
+            </div>
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('quizlet', 4)"
+            >
+              Quizlet
+            </div>
+          </div>
+        </div>
+        <div class="subject_box">
+          <div class="title">5年級</div>
+          <div id="5year" class="subject_group">
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('wordwall', 5)"
+            >
+              Wordwall
+            </div>
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('kahoot', 5)"
+            >
+              Kahoot!
+            </div>
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('quizizz', 5)"
+            >
+              Quizizz
+            </div>
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('quizlet', 5)"
+            >
+              Quizlet
+            </div>
+          </div>
+        </div>
+        <div class="subject_box">
+          <div class="title">6年級</div>
+          <div id="6year" class="subject_group">
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('wordwall', 6)"
+            >
+              Wordwall
+            </div>
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('kahoot', 6)"
+            >
+              Kahoot!
+            </div>
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('quizizz', 6)"
+            >
+              Quizizz
+            </div>
+            <div
+              class="subject show"
+              onclick="clickSubjectResource('quizlet', 6)"
+            >
+              Quizlet
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="subject_group">
-      <div class="subject"></div>
-      <div class="subject"></div>
-      <div class="subject"></div>
-    </div>
-    <div class="subject_group"></div>
   </div>
 </body>
