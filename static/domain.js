@@ -20,15 +20,20 @@ const yearSelector = (id, index) => {
   if (semester === '112上' && year) {
     const wordwall = document.getElementById('wordwall');
     wordwall.querySelectorAll('.subject').forEach((el) => {
+      el.classList.remove('show');
+
       el.classList.contains('chinese') && el.classList.add('show');
       el.classList.contains('math') && el.classList.add('show');
       el.classList.contains('life') && el.classList.add('show');
 
       if (year === '3年級' || year === '4年級' || year === '5年級' || year === '6年級') {
-        el.classList.contains('life') && el.classList.remove('show');
-
         el.classList.contains('science') && el.classList.add('show');
         el.classList.contains('socialStudies') && el.classList.add('show');
+      }
+
+      if (year === '3年級' || year === '5年級') {
+        el.classList.contains('healthAndPhysical') && el.classList.add('show');
+        el.classList.contains('integrated') && el.classList.add('show');
       }
     })
   }
@@ -36,13 +41,13 @@ const yearSelector = (id, index) => {
   if (semester === '112上' && year) {
     const kahoot = document.getElementById('kahoot');
     kahoot.querySelectorAll('.subject').forEach((el) => {
+      el.classList.remove('show');
+
       el.classList.contains('chinese') && el.classList.add('show');
       el.classList.contains('math') && el.classList.add('show');
       el.classList.contains('life') && el.classList.add('show');
 
       if (year === '3年級' || year === '4年級' || year === '5年級' || year === '6年級') {
-        el.classList.contains('life') && el.classList.remove('show');
-
         el.classList.contains('science') && el.classList.add('show');
         el.classList.contains('socialStudies') && el.classList.add('show');
       }
@@ -52,12 +57,12 @@ const yearSelector = (id, index) => {
   if (semester === '112上' && year) {
     const quizizz = document.getElementById('quizizz');
     quizizz.querySelectorAll('.subject').forEach((el) => {
+      el.classList.remove('show');
+
       el.classList.contains('chinese') && el.classList.add('show');
       el.classList.contains('math') && el.classList.add('show');
 
       if (year === '3年級' || year === '4年級' || year === '5年級' || year === '6年級') {
-        el.classList.contains('life') && el.classList.remove('show');
-
         el.classList.contains('science') && el.classList.add('show');
         el.classList.contains('socialStudies') && el.classList.add('show');
       }
@@ -67,9 +72,10 @@ const yearSelector = (id, index) => {
   if (semester === '112上' && year) {
     const quizlet = document.getElementById('quizlet');
     quizlet.querySelectorAll('.subject').forEach((el) => {
+      el.classList.remove('show');
       el.classList.contains('chinese') && el.classList.add('show');
 
-      if (year === '3年級' || year === '4年級' || year === '4年級' || year === '5年級' || year === '6年級') {
+      if (year === '3年級' || year === '4年級' || year === '5年級' || year === '6年級') {
         el.classList.contains('science') && el.classList.add('show');
         el.classList.contains('socialStudies') && el.classList.add('show');
       }
@@ -79,7 +85,12 @@ const yearSelector = (id, index) => {
   if (semester === '112上' && year) {
     const coggle = document.getElementById('coggle');
     coggle.querySelectorAll('.subject').forEach((el) => {
+      el.classList.remove('show');
+
       el.classList.contains('chinese') && el.classList.add('show');
+      if (year === '3年級' || year === '4年級' || year === '5年級') {
+        el.classList.contains('socialStudies') && el.classList.add('show');
+      }
     })
   }
   
@@ -166,6 +177,12 @@ const clickResource = (subject, resource) => {
     case semester === '112上' && year === '3年級' && subject === '社會' && resource === "wordwall":
       goToResource('https://docs.google.com/spreadsheets/d/1yQqlKnu2MzO_sJ7kjViZiMVWihJcg2-qI2cDCujXCNI/edit#gid=141887502')
       break;
+    case semester === '112上' && year === '3年級' && subject === '健體' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1NXQORBOeZwe2iSLxwOulXFND4aK9fY2Czc4axZ99dvQ/edit#gid=0')
+      break;
+    case semester === '112上' && year === '3年級' && subject === '綜合' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1vZ2-ydzVBy72GjBI6Y_IdTT7zQAtBakljIg7IYDflBA/edit#gid=0')
+      break;
     case semester === '112上' && year === '3年級' && subject === '國語' && resource === "kahoot":
       goToResource('https://docs.google.com/spreadsheets/d/1JXNtjlBnfBkoewF_R9ju9K2Mgaz_NHJbxYUfADo6jfA/edit#gid=1278089206')
       break;
@@ -201,6 +218,9 @@ const clickResource = (subject, resource) => {
       break;
     case semester === '112上' && year === '3年級' && subject === '國語' && resource === "coggle":
       goToResource('https://docs.google.com/spreadsheets/d/1Bl7-nsZssALYTJiwxvdIj5iQQHXUSPAnYX925TpBgQ0/edit#gid=1584925057')
+      break;
+    case semester === '112上' && year === '3年級' && subject === '社會' && resource === "coggle":
+      goToResource('https://docs.google.com/spreadsheets/d/1tOmn7C0wIP_z4OfozvKaWdJXMPSf89za4qo97Q0jUPk/edit#gid=1584925057')
       break;
 
 
@@ -252,6 +272,9 @@ const clickResource = (subject, resource) => {
     case semester === '112上' && year === '4年級' && subject === '國語' && resource === "coggle":
       goToResource('https://docs.google.com/spreadsheets/d/1Bl7-nsZssALYTJiwxvdIj5iQQHXUSPAnYX925TpBgQ0/edit#gid=940029605')
       break;
+    case semester === '112上' && year === '4年級' && subject === '社會' && resource === "coggle":
+      goToResource('https://docs.google.com/spreadsheets/d/1tOmn7C0wIP_z4OfozvKaWdJXMPSf89za4qo97Q0jUPk/edit#gid=416490095')
+      break;
 
 
 
@@ -267,6 +290,12 @@ const clickResource = (subject, resource) => {
       break;
     case semester === '112上' && year === '5年級' && subject === '社會' && resource === "wordwall":
       goToResource('https://docs.google.com/spreadsheets/d/1yQqlKnu2MzO_sJ7kjViZiMVWihJcg2-qI2cDCujXCNI/edit#gid=1244559183')
+      break;
+    case semester === '112上' && year === '5年級' && subject === '健體' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1NXQORBOeZwe2iSLxwOulXFND4aK9fY2Czc4axZ99dvQ/edit#gid=1584925057')
+      break;
+    case semester === '112上' && year === '5年級' && subject === '綜合' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1vZ2-ydzVBy72GjBI6Y_IdTT7zQAtBakljIg7IYDflBA/edit#gid=1584925057')
       break;
     case semester === '112上' && year === '5年級' && subject === '國語' && resource === "kahoot":
       goToResource('https://docs.google.com/spreadsheets/d/1JXNtjlBnfBkoewF_R9ju9K2Mgaz_NHJbxYUfADo6jfA/edit#gid=1475000600')
@@ -303,6 +332,9 @@ const clickResource = (subject, resource) => {
       break;
     case semester === '112上' && year === '5年級' && subject === '國語' && resource === "coggle":
       goToResource('https://docs.google.com/spreadsheets/d/1Bl7-nsZssALYTJiwxvdIj5iQQHXUSPAnYX925TpBgQ0/edit#gid=1318573361')
+      break;
+    case semester === '112上' && year === '5年級' && subject === '社會' && resource === "coggle":
+      goToResource('https://docs.google.com/spreadsheets/d/1tOmn7C0wIP_z4OfozvKaWdJXMPSf89za4qo97Q0jUPk/edit#gid=812247135')
       break;
 
 
