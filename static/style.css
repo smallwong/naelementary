@@ -1,8 +1,24 @@
+/* 仿宋體字體 */
+/* @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css); */
+/* font-family: "cwTeXFangSong", serif; */
+
+/* 思源黑體 */
+/* @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css); */
+/* font-family: "Noto Sans TC", sans-serif; */
+
+/* @font-face {
+  font-family: "HuaKangXinTeMingTi";
+  src: url("../font/font1.ttf") format("truetype");
+} */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #eef5ff;
+}
+body {
+  font-family: Microsoft JhengHei, 微軟正黑體, sans-serif;
 }
 
 .banner {
@@ -10,6 +26,8 @@
   padding: 5%;
   background-color: #9eb8d9;
   font-size: 2em;
+  /* font-family: DFNMingXBold-B5; */
+  /* font-family: "HuaKangXinTeMingTi"', sans-serif; */
 }
 
 .container {
@@ -106,4 +124,16 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #bbb;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 70%;
+  }
 }
