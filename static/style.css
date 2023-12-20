@@ -6,10 +6,10 @@
 /* @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css); */
 /* font-family: "Noto Sans TC", sans-serif; */
 
-/* @font-face {
+@font-face {
   font-family: "HuaKangXinTeMingTi";
-  src: url("../font/font1.ttf") format("truetype");
-} */
+  src: url("../font/DFNMing-W9-WINP-BF-02.ttf") format("truetype");
+}
 
 * {
   margin: 0;
@@ -27,7 +27,7 @@ body {
   background-color: #9eb8d9;
   font-size: 2em;
   /* font-family: DFNMingXBold-B5; */
-  /* font-family: "HuaKangXinTeMingTi"', sans-serif; */
+  font-family: "HuaKangXinTeMingTi";
 }
 
 .container {
