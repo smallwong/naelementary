@@ -29,6 +29,7 @@ body {
   background-color: #83b3c6;
   color: #fff;
   font-size: 2em;
+  text-shadow: 1.5px 1.5px 2px #333;
   font-family: HuaKangXinTeMingTi;
 }
 
@@ -84,6 +85,7 @@ body {
   width: 100%;
   background-color: #83b3c6;
   color: #fff;
+  text-shadow: 1.5px 1.5px 2px #333;
   padding: 10px;
   border-radius: 5px;
 }
