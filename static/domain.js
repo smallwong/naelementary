@@ -533,3 +533,21 @@ const clickSubjectResource = (resource, schoolYear) => {
     }
   }
 }
+
+window.onscroll = () => {
+  onScrollHandle()
+}
+
+const onScrollHandle = () => {
+  const topBtn = document.getElementById("scrollTop");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topBtn.style.display = "flex";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
+
+const goTop = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
