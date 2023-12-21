@@ -116,6 +116,7 @@ body {
 }
 
 .scroll_top {
+  display: none;
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -123,7 +124,7 @@ body {
   height: 50px;
   border-radius: 50%;
   background-color: #eee;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   cursor: pointer;
