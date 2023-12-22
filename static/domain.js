@@ -405,8 +405,30 @@ const subjectSelector = (id , index) => {
   if (semester && year) {
     document.getElementById('subject_options').classList.add('active');
     document.getElementById('year_options').classList.remove('active');
+
+    showHideOption();
+    
   }
 
+}
+
+const showHideOption = () => {
+  const treeYearOption = document.getElementById('3year');
+  const fourYearOption = document.getElementById('4year');
+  const fiveYearOption = document.getElementById('5year');
+  yearOptionRemoveScience(treeYearOption);
+  yearOptionRemoveScience(fourYearOption);
+  yearOptionRemoveScience(fiveYearOption);
+
+}
+
+const yearOptionRemoveScience = (el) => {
+  el.querySelectorAll('.subject').forEach((el) => {
+    el.classList.add('show');
+    if (year === "自然") {
+      el.classList.contains('coggle') && el.classList.remove('show');
+    }
+  });
 }
 
 const clickSubjectResource = (resource, schoolYear) => {
@@ -486,6 +508,9 @@ const clickSubjectResource = (resource, schoolYear) => {
       case semester === '112上' && resource === 'quizlet' && schoolYear === 3:
         goToResource('https://docs.google.com/spreadsheets/d/11N3nUB8-wkCLcWkYjUe6pen4aC-B9pCxLwOvXOjYV6A/edit#gid=141887502')
         break;
+      case semester === '112上' && resource === 'coggle' && schoolYear === 3:
+        goToResource('https://docs.google.com/spreadsheets/d/1tOmn7C0wIP_z4OfozvKaWdJXMPSf89za4qo97Q0jUPk/edit#gid=1584925057')
+        break;
   
   
       case semester === '112上' && resource === 'wordwall' && schoolYear === 4:
@@ -500,6 +525,9 @@ const clickSubjectResource = (resource, schoolYear) => {
       case semester === '112上' && resource === 'quizlet' && schoolYear === 4:
         goToResource('https://docs.google.com/spreadsheets/d/11N3nUB8-wkCLcWkYjUe6pen4aC-B9pCxLwOvXOjYV6A/edit#gid=245821822')
         break;
+      case semester === '112上' && resource === 'coggle' && schoolYear === 4:
+        goToResource('https://docs.google.com/spreadsheets/d/1tOmn7C0wIP_z4OfozvKaWdJXMPSf89za4qo97Q0jUPk/edit#gid=416490095')
+        break;
   
     
       case semester === '112上' && resource === 'wordwall' && schoolYear === 5:
@@ -513,6 +541,9 @@ const clickSubjectResource = (resource, schoolYear) => {
         break;
       case semester === '112上' && resource === 'quizlet' && schoolYear === 5:
         goToResource('https://docs.google.com/spreadsheets/d/11N3nUB8-wkCLcWkYjUe6pen4aC-B9pCxLwOvXOjYV6A/edit#gid=1558318885')
+        break;
+      case semester === '112上' && resource === 'coggle' && schoolYear === 5:
+        goToResource('https://docs.google.com/spreadsheets/d/1tOmn7C0wIP_z4OfozvKaWdJXMPSf89za4qo97Q0jUPk/edit#gid=812247135')
         break;
   
   
