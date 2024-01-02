@@ -7,8 +7,16 @@
 /* font-family: "Noto Sans TC", sans-serif; */
 
 @font-face {
-  font-family: HuaKangXinTeMingTi;
-  src: url("../fonts/DFNMing-W9-WIN-BF-01.ttf") format("opentype");
+  font-family: "DFNMingXBold-B5";
+  src: url("../fonts/DFNMing-W9-WIN-BF.eot");
+  src: url("../fonts/DFNMing-W9-WIN-BF.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/DFNMing-W9-WIN-BF.woff2") format("woff2"),
+    url("../fonts/DFNMing-W9-WIN-BF.woff") format("woff"),
+    url("../fonts/DFNMing-W9-WIN-BF.ttf") format("truetype"),
+    url("../fonts/DFNMing-W9-WIN-BF.svg#DFNMing-W9-WIN-BF") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -30,7 +38,7 @@ body {
   color: #fff;
   font-size: 2em;
   text-shadow: 1.5px 1.5px 2px #333;
-  font-family: HuaKangXinTeMingTi;
+  font-family: "DFNMingXBold-B5";
 }
 
 .container {
