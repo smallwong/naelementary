@@ -1,11 +1,3 @@
-/* 仿宋體字體 */
-/* @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css); */
-/* font-family: "cwTeXFangSong", serif; */
-
-/* 思源黑體 */
-/* @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css); */
-/* font-family: "Noto Sans TC", sans-serif; */
-
 @font-face {
   font-family: "DFNMingXBold-B5";
   src: url("../fonts/DFNMing-W9-WIN-BF.eot");
@@ -33,7 +25,7 @@ body {
 
 .banner {
   width: 100%;
-  padding: 5%;
+  padding: 2% 5%;
   background-color: #83b3c6;
   color: #fff;
   font-size: 2em;
@@ -62,6 +54,7 @@ body {
 }
 .selector_box .selector .title {
   font-size: 1.5em;
+  padding: 0 10px;
 }
 .selector_box .selector .button_box {
   display: flex;
@@ -152,14 +145,28 @@ body {
   background: #bbb;
 }
 
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 70%;
+  }
+
+  .selector_box .selector .button_box .button,
+  .subject_wrapper .subject_box .subject_group .subject {
+    width: 165px;
+    padding: 20px 0;
+    font-size: 1.5em;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     width: 50%;
   }
-}
 
-@media only screen and (max-width: 992px) {
-  .container {
-    width: 70%;
+  .selector_box .selector .button_box .button,
+  .subject_wrapper .subject_box .subject_group .subject {
+    width: 195px;
+    padding: 30px 0;
+    font-size: 1.8em;
   }
 }
