@@ -132,6 +132,37 @@ const clickResource = (subject, resource) => {
     case semester === '上學期' && year === '1年級' && subject === '國語' && resource === "coggle":
       goToResource('https://docs.google.com/spreadsheets/d/1Bl7-nsZssALYTJiwxvdIj5iQQHXUSPAnYX925TpBgQ0/edit#gid=1871456719')
       break;
+    case semester === '下學期' && year === '1年級' && subject === '國語' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1Niwb7wbptYr9NyDZjtWNvxuMojHLeRH_-IlXGqtRetQ/edit#gid=0')
+      break;
+    case semester === '下學期' && year === '1年級' && subject === '國語' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/18wOXY5ouBbZTDu07vVBHtYRO_1MHvDr7jL_mXqVnekY/edit#gid=0')
+      break;
+    case semester === '下學期' && year === '1年級' && subject === '國語' && resource === "quizlet":
+      goToResource('https://docs.google.com/spreadsheets/d/11uQ5YIfu-62uto6UvT0hsz9c0TrdXbO5c5Uu0dlAbE4/edit#gid=0')
+      break;
+    case semester === '下學期' && year === '1年級' && subject === '國語' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1okfE42GJnGTcNaD0M6px7PeYhEobZwuPs3PNESyVxps/edit#gid=2022126782')
+      break;
+    case semester === '下學期' && year === '1年級' && subject === '國語' && resource === "coggle":
+      goToResource('https://docs.google.com/spreadsheets/d/1Ih1YuwDMYc7yZqpShY3M8nFGblK_6RpneqAIQ3g5NZs/edit#gid=0')
+      break;
+    case semester === '下學期' && year === '1年級' && subject === '數學' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1nAYesSGsNXIpjpMyoCYPlya7JNdevl8cna7DGBTCYeU/edit#gid=0')
+      break;
+    case semester === '下學期' && year === '1年級' && subject === '數學' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1tNLtPxkF0r6SylprXbr_LTw4ovjvMJ8fkcB4kmYnlCY/edit#gid=0')
+      break;
+    case semester === '下學期' && year === '1年級' && subject === '數學' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/11-bvjg-1QBtHliO8V5EMSg9mTBxPSdDUiJpxL3jK-DY/edit#gid=0')
+      break;
+    case semester === '下學期' && year === '1年級' && subject === '生活' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1mdSyM1Ppr-e9L-4Obt9aLx8YfYoGaKXpDFg0nb7agoY/edit#gid=584550200')
+      break;
+    case semester === '下學期' && year === '1年級' && subject === '生活' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1fddgZGME__Wm3tbilPdxz5X80ugK6ZHNaYUBKiefNJA/edit#gid=0')
+      break;
+
 
     case semester === '上學期' && year === '2年級' && subject === '國語' && resource === "wordwall":
       goToResource('https://docs.google.com/spreadsheets/d/1R3mycJ9EzRADvItGWiWICFfscB0SFDIyuS-1ciyEnK8/edit#gid=1210656762')
@@ -162,6 +193,21 @@ const clickResource = (subject, resource) => {
       break;
     case semester === '上學期' && year === '2年級' && subject === '國語' && resource === "coggle":
       goToResource('https://docs.google.com/spreadsheets/d/1Bl7-nsZssALYTJiwxvdIj5iQQHXUSPAnYX925TpBgQ0/edit#gid=816137345')
+      break;
+    case semester === '下學期' && year === '2年級' && subject === '數學' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1nAYesSGsNXIpjpMyoCYPlya7JNdevl8cna7DGBTCYeU/edit#gid=1714521674')
+      break;
+    case semester === '下學期' && year === '2年級' && subject === '數學' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1tNLtPxkF0r6SylprXbr_LTw4ovjvMJ8fkcB4kmYnlCY/edit#gid=916856904')
+      break;
+    case semester === '下學期' && year === '2年級' && subject === '數學' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/11-bvjg-1QBtHliO8V5EMSg9mTBxPSdDUiJpxL3jK-DY/edit#gid=916856904')
+      break;
+    case semester === '下學期' && year === '2年級' && subject === '生活' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1mdSyM1Ppr-e9L-4Obt9aLx8YfYoGaKXpDFg0nb7agoY/edit#gid=807048046')
+      break;
+    case semester === '下學期' && year === '2年級' && subject === '生活' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1fddgZGME__Wm3tbilPdxz5X80ugK6ZHNaYUBKiefNJA/edit#gid=1584925057')
       break;
 
 
@@ -222,6 +268,50 @@ const clickResource = (subject, resource) => {
     case semester === '上學期' && year === '3年級' && subject === '社會' && resource === "coggle":
       goToResource('https://docs.google.com/spreadsheets/d/1tOmn7C0wIP_z4OfozvKaWdJXMPSf89za4qo97Q0jUPk/edit#gid=1584925057')
       break;
+    case semester === '下學期' && year === '3年級' && subject === '數學' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1nAYesSGsNXIpjpMyoCYPlya7JNdevl8cna7DGBTCYeU/edit#gid=1224012546')
+      break;
+    case semester === '下學期' && year === '3年級' && subject === '數學' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1tNLtPxkF0r6SylprXbr_LTw4ovjvMJ8fkcB4kmYnlCY/edit#gid=1871020819')
+      break;
+    case semester === '下學期' && year === '3年級' && subject === '數學' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/11-bvjg-1QBtHliO8V5EMSg9mTBxPSdDUiJpxL3jK-DY/edit#gid=1871020819')
+      break;
+    case semester === '下學期' && year === '3年級' && subject === '自然' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1GfIIoQfG1cB_xZCaBGGkeG4dXtx57cBtr8O2bBBTw8U/edit#gid=584550200')
+      break;
+    case semester === '下學期' && year === '3年級' && subject === '自然' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1-7KvxssZlLnBMFMFq0kXWDGQJr3v6gTqC2HklZ3sV7k/edit#gid=1871020819')
+      break;
+    case semester === '下學期' && year === '3年級' && subject === '自然' && resource === "quizlet":
+      goToResource('https://docs.google.com/spreadsheets/d/1mFuiMfnUQceMJqi8_CD_F7oCBK7NpIuoQXecp1BJYHM/edit#gid=141887502')
+      break;
+    case semester === '下學期' && year === '3年級' && subject === '自然' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1EsIKspEsMxKOiLvnO36OTUHu8tywwlxujEHfmdXxR4o/edit#gid=0')
+      break;
+    case semester === '下學期' && year === '3年級' && subject === '社會' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1zB_sC_GCKkBRUO6NlBy3dHy3YWOJshkQ8RbyK1obaO8/edit#gid=584550200')
+      break;
+    case semester === '下學期' && year === '3年級' && subject === '社會' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1XL1KUycAXfa0amk28nXuh_nPnKQCpEGu-ZFC0SF7Yxw/edit#gid=1871020819')
+      break;
+    case semester === '下學期' && year === '3年級' && subject === '社會' && resource === "quizlet":
+      goToResource('https://docs.google.com/spreadsheets/d/1BXbNVxpMam8YIzw-xrL3R32RlICWzOCycvZA2iqLUNg/edit#gid=141887502')
+      break;
+    case semester === '下學期' && year === '3年級' && subject === '社會' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1n_AxK7kLOHSDyenQs6MNwNccqps8-CF8WP9ahpJmPT8/edit#gid=141887502')
+      break;
+    case semester === '下學期' && year === '3年級' && subject === '社會' && resource === "coggle":
+      goToResource('https://docs.google.com/spreadsheets/d/1mjy192TNwUe1sWgAAZbRF8DujrMAg_cm6VT-0zgleOo/edit#gid=1584925057')
+      break;
+    case semester === '下學期' && year === '3年級' && subject === '健體' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1ZgHxmWNBhSATqfRkXySeFw4sQ2jIuns58XrSaJhtxfU/edit#gid=0')
+      break;
+    case semester === '下學期' && year === '3年級' && subject === '綜合' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1R9e2zA0TdkN0qY1AzURcmvUQwj6lrvbzaaw5SWJy_48/edit#gid=0')
+      break;
+
+
 
 
     case semester === '上學期' && year === '4年級' && subject === '國語' && resource === "wordwall":
@@ -274,6 +364,42 @@ const clickResource = (subject, resource) => {
       break;
     case semester === '上學期' && year === '4年級' && subject === '社會' && resource === "coggle":
       goToResource('https://docs.google.com/spreadsheets/d/1tOmn7C0wIP_z4OfozvKaWdJXMPSf89za4qo97Q0jUPk/edit#gid=416490095')
+      break;
+    case semester === '下學期' && year === '4年級' && subject === '數學' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1nAYesSGsNXIpjpMyoCYPlya7JNdevl8cna7DGBTCYeU/edit#gid=1463111299')
+      break;
+    case semester === '下學期' && year === '4年級' && subject === '數學' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1tNLtPxkF0r6SylprXbr_LTw4ovjvMJ8fkcB4kmYnlCY/edit#gid=2005991381')
+      break;
+    case semester === '下學期' && year === '4年級' && subject === '數學' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/11-bvjg-1QBtHliO8V5EMSg9mTBxPSdDUiJpxL3jK-DY/edit#gid=2005991381')
+      break;
+    case semester === '下學期' && year === '4年級' && subject === '自然' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1GfIIoQfG1cB_xZCaBGGkeG4dXtx57cBtr8O2bBBTw8U/edit#gid=807048046')
+      break;
+    case semester === '下學期' && year === '4年級' && subject === '自然' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1-7KvxssZlLnBMFMFq0kXWDGQJr3v6gTqC2HklZ3sV7k/edit#gid=2005991381')
+      break;
+    case semester === '下學期' && year === '4年級' && subject === '自然' && resource === "quizlet":
+      goToResource('https://docs.google.com/spreadsheets/d/1mFuiMfnUQceMJqi8_CD_F7oCBK7NpIuoQXecp1BJYHM/edit#gid=1261575536')
+      break;
+    case semester === '下學期' && year === '4年級' && subject === '自然' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1EsIKspEsMxKOiLvnO36OTUHu8tywwlxujEHfmdXxR4o/edit#gid=1584925057')
+      break;
+    case semester === '下學期' && year === '4年級' && subject === '社會' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1zB_sC_GCKkBRUO6NlBy3dHy3YWOJshkQ8RbyK1obaO8/edit#gid=807048046')
+      break;
+    case semester === '下學期' && year === '4年級' && subject === '社會' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1XL1KUycAXfa0amk28nXuh_nPnKQCpEGu-ZFC0SF7Yxw/edit#gid=1668464697')
+      break;
+    case semester === '下學期' && year === '4年級' && subject === '社會' && resource === "quizlet":
+      goToResource('https://docs.google.com/spreadsheets/d/1BXbNVxpMam8YIzw-xrL3R32RlICWzOCycvZA2iqLUNg/edit#gid=573244975')
+      break;
+    case semester === '下學期' && year === '4年級' && subject === '社會' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1n_AxK7kLOHSDyenQs6MNwNccqps8-CF8WP9ahpJmPT8/edit#gid=2090638246')
+      break;
+    case semester === '下學期' && year === '4年級' && subject === '社會' && resource === "coggle":
+      goToResource('https://docs.google.com/spreadsheets/d/1mjy192TNwUe1sWgAAZbRF8DujrMAg_cm6VT-0zgleOo/edit#gid=416490095')
       break;
 
 
@@ -336,6 +462,50 @@ const clickResource = (subject, resource) => {
     case semester === '上學期' && year === '5年級' && subject === '社會' && resource === "coggle":
       goToResource('https://docs.google.com/spreadsheets/d/1tOmn7C0wIP_z4OfozvKaWdJXMPSf89za4qo97Q0jUPk/edit#gid=812247135')
       break;
+    case semester === '下學期' && year === '5年級' && subject === '數學' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1nAYesSGsNXIpjpMyoCYPlya7JNdevl8cna7DGBTCYeU/edit#gid=736026928')
+      break;
+    case semester === '下學期' && year === '5年級' && subject === '數學' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1tNLtPxkF0r6SylprXbr_LTw4ovjvMJ8fkcB4kmYnlCY/edit#gid=1343481458')
+      break;
+    case semester === '下學期' && year === '5年級' && subject === '數學' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/11-bvjg-1QBtHliO8V5EMSg9mTBxPSdDUiJpxL3jK-DY/edit#gid=1343481458')
+      break;
+    case semester === '下學期' && year === '5年級' && subject === '自然' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1GfIIoQfG1cB_xZCaBGGkeG4dXtx57cBtr8O2bBBTw8U/edit#gid=741572221')
+      break;
+    case semester === '下學期' && year === '5年級' && subject === '自然' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1-7KvxssZlLnBMFMFq0kXWDGQJr3v6gTqC2HklZ3sV7k/edit#gid=1343481458')
+      break;
+    case semester === '下學期' && year === '5年級' && subject === '自然' && resource === "quizlet":
+      goToResource('https://docs.google.com/spreadsheets/d/1mFuiMfnUQceMJqi8_CD_F7oCBK7NpIuoQXecp1BJYHM/edit#gid=2025731435')
+      break;
+    case semester === '下學期' && year === '5年級' && subject === '自然' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1EsIKspEsMxKOiLvnO36OTUHu8tywwlxujEHfmdXxR4o/edit#gid=1934389515')
+      break;
+    case semester === '下學期' && year === '5年級' && subject === '社會' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1zB_sC_GCKkBRUO6NlBy3dHy3YWOJshkQ8RbyK1obaO8/edit#gid=741572221')
+      break;
+    case semester === '下學期' && year === '5年級' && subject === '社會' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1XL1KUycAXfa0amk28nXuh_nPnKQCpEGu-ZFC0SF7Yxw/edit#gid=1768453216')
+      break;
+    case semester === '下學期' && year === '5年級' && subject === '社會' && resource === "quizlet":
+      goToResource('https://docs.google.com/spreadsheets/d/1BXbNVxpMam8YIzw-xrL3R32RlICWzOCycvZA2iqLUNg/edit#gid=1695506235')
+      break;
+    case semester === '下學期' && year === '5年級' && subject === '社會' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1n_AxK7kLOHSDyenQs6MNwNccqps8-CF8WP9ahpJmPT8/edit#gid=1833055741')
+      break;
+    case semester === '下學期' && year === '5年級' && subject === '社會' && resource === "coggle":
+      goToResource('https://docs.google.com/spreadsheets/d/1mjy192TNwUe1sWgAAZbRF8DujrMAg_cm6VT-0zgleOo/edit#gid=1670972641')
+      break;
+    case semester === '下學期' && year === '5年級' && subject === '健體' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1ZgHxmWNBhSATqfRkXySeFw4sQ2jIuns58XrSaJhtxfU/edit#gid=1584925057')
+      break;
+    case semester === '下學期' && year === '5年級' && subject === '綜合' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1R9e2zA0TdkN0qY1AzURcmvUQwj6lrvbzaaw5SWJy_48/edit#gid=1584925057')
+      break;
+
+
 
 
     case semester === '上學期' && year === '6年級' && subject === '國語' && resource === "wordwall":
@@ -385,6 +555,36 @@ const clickResource = (subject, resource) => {
       break;
     case semester === '上學期' && year === '6年級' && subject === '國語' && resource === "coggle":
       goToResource('https://docs.google.com/spreadsheets/d/1Bl7-nsZssALYTJiwxvdIj5iQQHXUSPAnYX925TpBgQ0/edit#gid=1665130720')
+      break;
+    case semester === '下學期' && year === '6年級' && subject === '數學' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1nAYesSGsNXIpjpMyoCYPlya7JNdevl8cna7DGBTCYeU/edit#gid=1639676729')
+      break;
+    case semester === '下學期' && year === '6年級' && subject === '數學' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1tNLtPxkF0r6SylprXbr_LTw4ovjvMJ8fkcB4kmYnlCY/edit#gid=694640157')
+      break;
+    case semester === '下學期' && year === '6年級' && subject === '數學' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/11-bvjg-1QBtHliO8V5EMSg9mTBxPSdDUiJpxL3jK-DY/edit#gid=694640157')
+      break;
+    case semester === '下學期' && year === '6年級' && subject === '自然' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1GfIIoQfG1cB_xZCaBGGkeG4dXtx57cBtr8O2bBBTw8U/edit#gid=158759695')
+      break;
+    case semester === '下學期' && year === '6年級' && subject === '自然' && resource === "quizlet":
+      goToResource('https://docs.google.com/spreadsheets/d/1mFuiMfnUQceMJqi8_CD_F7oCBK7NpIuoQXecp1BJYHM/edit#gid=1144388412')
+      break;
+    case semester === '下學期' && year === '6年級' && subject === '自然' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1EsIKspEsMxKOiLvnO36OTUHu8tywwlxujEHfmdXxR4o/edit#gid=263286272')
+      break;
+    case semester === '下學期' && year === '6年級' && subject === '社會' && resource === "kahoot":
+      goToResource('https://docs.google.com/spreadsheets/d/1zB_sC_GCKkBRUO6NlBy3dHy3YWOJshkQ8RbyK1obaO8/edit#gid=158759695')
+      break;
+    case semester === '下學期' && year === '6年級' && subject === '社會' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1XL1KUycAXfa0amk28nXuh_nPnKQCpEGu-ZFC0SF7Yxw/edit#gid=1823763126')
+      break;
+    case semester === '下學期' && year === '6年級' && subject === '社會' && resource === "quizlet":
+      goToResource('https://docs.google.com/spreadsheets/d/1BXbNVxpMam8YIzw-xrL3R32RlICWzOCycvZA2iqLUNg/edit#gid=217098870')
+      break;
+    case semester === '下學期' && year === '6年級' && subject === '社會' && resource === "wordwall":
+      goToResource('https://docs.google.com/spreadsheets/d/1n_AxK7kLOHSDyenQs6MNwNccqps8-CF8WP9ahpJmPT8/edit#gid=1738499245')
       break;
     default:
       break;
