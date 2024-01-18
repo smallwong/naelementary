@@ -17,7 +17,7 @@ const yearSelector = (id, index) => {
     document.getElementById('subject_options').classList.remove('active');
   }
 
-  if (semester === '上學期' && year) {
+  if (semester && year) {
     const wordwall = document.getElementById('wordwall');
     wordwall.querySelectorAll('.subject').forEach((el) => {
       el.classList.remove('show');
@@ -38,7 +38,7 @@ const yearSelector = (id, index) => {
     })
   }
 
-  if (semester === '上學期' && year) {
+  if (semester && year) {
     const kahoot = document.getElementById('kahoot');
     kahoot.querySelectorAll('.subject').forEach((el) => {
       el.classList.remove('show');
@@ -54,7 +54,7 @@ const yearSelector = (id, index) => {
     })
   }
 
-  if (semester === '上學期' && year) {
+  if (semester && year) {
     const quizizz = document.getElementById('quizizz');
     quizizz.querySelectorAll('.subject').forEach((el) => {
       el.classList.remove('show');
@@ -69,7 +69,7 @@ const yearSelector = (id, index) => {
     })
   }
 
-  if (semester === '上學期' && year) {
+  if (semester && year) {
     const quizlet = document.getElementById('quizlet');
     quizlet.querySelectorAll('.subject').forEach((el) => {
       el.classList.remove('show');
@@ -82,7 +82,7 @@ const yearSelector = (id, index) => {
     })
   }
 
-  if (semester === '上學期' && year) {
+  if (semester && year) {
     const coggle = document.getElementById('coggle');
     coggle.querySelectorAll('.subject').forEach((el) => {
       el.classList.remove('show');
