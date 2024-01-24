@@ -1,7 +1,92 @@
 let semester = ''; // 學期
 let year = ''; // 年級 or 科目
 
+const onWordwallHandle = () => {
+  const wordwall = document.getElementById('wordwall');
+  wordwall.querySelectorAll('.subject').forEach((el) => {
+    el.classList.remove('show');
+
+    el.classList.contains('chinese') && el.classList.add('show');
+    el.classList.contains('math') && el.classList.add('show');
+
+    if (year === '1年級' || year === '2年級') {
+      el.classList.contains('life') && el.classList.add('show');
+    }
+
+    if (year === '3年級' || year === '4年級' || year === '5年級' || year === '6年級') {
+      el.classList.contains('science') && el.classList.add('show');
+      el.classList.contains('socialStudies') && el.classList.add('show');
+    }
+
+    if (year === '3年級' || year === '5年級') {
+      el.classList.contains('healthAndPhysical') && el.classList.add('show');
+      el.classList.contains('integrated') && el.classList.add('show');
+    }
+  })
+}
+
+const onKahootHandle = () => {
+  const kahoot = document.getElementById('kahoot');
+  kahoot.querySelectorAll('.subject').forEach((el) => {
+    el.classList.remove('show');
+
+    el.classList.contains('chinese') && el.classList.add('show');
+    el.classList.contains('math') && el.classList.add('show');
+
+    if (year === '1年級' || year === '2年級') {
+      el.classList.contains('life') && el.classList.add('show');
+    }
+
+    if (year === '3年級' || year === '4年級' || year === '5年級' || year === '6年級') {
+      el.classList.contains('science') && el.classList.add('show');
+      el.classList.contains('socialStudies') && el.classList.add('show');
+    }
+  })
+}
+
+const onQuizizzHandle = () => {
+  const quizizz = document.getElementById('quizizz');
+  quizizz.querySelectorAll('.subject').forEach((el) => {
+    el.classList.remove('show');
+
+    el.classList.contains('chinese') && el.classList.add('show');
+    el.classList.contains('math') && el.classList.add('show');
+
+    if (year === '3年級' || year === '4年級' || year === '5年級' || year === '6年級') {
+      el.classList.contains('science') && el.classList.add('show');
+      el.classList.contains('socialStudies') && el.classList.add('show');
+    }
+  })
+}
+
+const onQuizletHandle = () => {
+  const quizlet = document.getElementById('quizlet');
+  quizlet.querySelectorAll('.subject').forEach((el) => {
+    el.classList.remove('show');
+    el.classList.contains('chinese') && el.classList.add('show');
+
+    if (year === '3年級' || year === '4年級' || year === '5年級' || year === '6年級') {
+      el.classList.contains('science') && el.classList.add('show');
+      el.classList.contains('socialStudies') && el.classList.add('show');
+    }
+  })
+}
+
+const onCoggleHandle = () => {
+  const coggle = document.getElementById('coggle');
+  coggle.querySelectorAll('.subject').forEach((el) => {
+    el.classList.remove('show');
+
+    el.classList.contains('chinese') && el.classList.add('show');
+    if (year === '3年級' || year === '4年級' || year === '5年級') {
+      el.classList.contains('socialStudies') && el.classList.add('show');
+    }
+  })
+}
+
 const yearSelector = (id, index) => {
+  console.log('id', id)
+  console.log('index', index)
   const el = document.getElementById(id);
   el.querySelectorAll('.button').forEach((el, idx) => {
     el.classList.remove('active')
@@ -15,85 +100,13 @@ const yearSelector = (id, index) => {
   if (semester && year) {
     document.getElementById('year_options').classList.add('active');
     document.getElementById('subject_options').classList.remove('active');
+    
+    onWordwallHandle();
+    onKahootHandle();
+    onQuizizzHandle();
+    onQuizletHandle();
+    onCoggleHandle();
   }
-
-  if (semester && year) {
-    const wordwall = document.getElementById('wordwall');
-    wordwall.querySelectorAll('.subject').forEach((el) => {
-      el.classList.remove('show');
-
-      el.classList.contains('chinese') && el.classList.add('show');
-      el.classList.contains('math') && el.classList.add('show');
-      el.classList.contains('life') && el.classList.add('show');
-
-      if (year === '3年級' || year === '4年級' || year === '5年級' || year === '6年級') {
-        el.classList.contains('science') && el.classList.add('show');
-        el.classList.contains('socialStudies') && el.classList.add('show');
-      }
-
-      if (year === '3年級' || year === '5年級') {
-        el.classList.contains('healthAndPhysical') && el.classList.add('show');
-        el.classList.contains('integrated') && el.classList.add('show');
-      }
-    })
-  }
-
-  if (semester && year) {
-    const kahoot = document.getElementById('kahoot');
-    kahoot.querySelectorAll('.subject').forEach((el) => {
-      el.classList.remove('show');
-
-      el.classList.contains('chinese') && el.classList.add('show');
-      el.classList.contains('math') && el.classList.add('show');
-      el.classList.contains('life') && el.classList.add('show');
-
-      if (year === '3年級' || year === '4年級' || year === '5年級' || year === '6年級') {
-        el.classList.contains('science') && el.classList.add('show');
-        el.classList.contains('socialStudies') && el.classList.add('show');
-      }
-    })
-  }
-
-  if (semester && year) {
-    const quizizz = document.getElementById('quizizz');
-    quizizz.querySelectorAll('.subject').forEach((el) => {
-      el.classList.remove('show');
-
-      el.classList.contains('chinese') && el.classList.add('show');
-      el.classList.contains('math') && el.classList.add('show');
-
-      if (year === '3年級' || year === '4年級' || year === '5年級' || year === '6年級') {
-        el.classList.contains('science') && el.classList.add('show');
-        el.classList.contains('socialStudies') && el.classList.add('show');
-      }
-    })
-  }
-
-  if (semester && year) {
-    const quizlet = document.getElementById('quizlet');
-    quizlet.querySelectorAll('.subject').forEach((el) => {
-      el.classList.remove('show');
-      el.classList.contains('chinese') && el.classList.add('show');
-
-      if (year === '3年級' || year === '4年級' || year === '5年級' || year === '6年級') {
-        el.classList.contains('science') && el.classList.add('show');
-        el.classList.contains('socialStudies') && el.classList.add('show');
-      }
-    })
-  }
-
-  if (semester && year) {
-    const coggle = document.getElementById('coggle');
-    coggle.querySelectorAll('.subject').forEach((el) => {
-      el.classList.remove('show');
-
-      el.classList.contains('chinese') && el.classList.add('show');
-      if (year === '3年級' || year === '4年級' || year === '5年級') {
-        el.classList.contains('socialStudies') && el.classList.add('show');
-      }
-    })
-  }
-  
 }
 
 const goToResource = (url) => {
@@ -471,7 +484,7 @@ const clickResource = (subject, resource) => {
     case semester === '下學期' && year === '5年級' && subject === '數學' && resource === "wordwall":
       goToResource('https://docs.google.com/spreadsheets/d/11-bvjg-1QBtHliO8V5EMSg9mTBxPSdDUiJpxL3jK-DY/edit#gid=1343481458')
       break;
-    case semester === '下學期' && year === '5年級' && subject === '自然' && resource === "wordwall":
+    case semester === '下學期' && year === '5年級' && subject === '自然' && resource === "kahoot":
       goToResource('https://docs.google.com/spreadsheets/d/1GfIIoQfG1cB_xZCaBGGkeG4dXtx57cBtr8O2bBBTw8U/edit#gid=741572221')
       break;
     case semester === '下學期' && year === '5年級' && subject === '自然' && resource === "quizizz":
@@ -568,6 +581,9 @@ const clickResource = (subject, resource) => {
     case semester === '下學期' && year === '6年級' && subject === '自然' && resource === "kahoot":
       goToResource('https://docs.google.com/spreadsheets/d/1GfIIoQfG1cB_xZCaBGGkeG4dXtx57cBtr8O2bBBTw8U/edit#gid=158759695')
       break;
+    case semester === '下學期' && year === '6年級' && subject === '自然' && resource === "quizizz":
+      goToResource('https://docs.google.com/spreadsheets/d/1-7KvxssZlLnBMFMFq0kXWDGQJr3v6gTqC2HklZ3sV7k/edit#gid=694640157')
+      break;
     case semester === '下學期' && year === '6年級' && subject === '自然' && resource === "quizlet":
       goToResource('https://docs.google.com/spreadsheets/d/1mFuiMfnUQceMJqi8_CD_F7oCBK7NpIuoQXecp1BJYHM/edit#gid=1144388412')
       break;
@@ -592,6 +608,8 @@ const clickResource = (subject, resource) => {
 }
 
 const subjectSelector = (id , index) => {
+  console.log('semester', semester)
+  console.log('year', year)
   const el = document.getElementById(id);
   el.querySelectorAll('.button').forEach((el, idx) => {
     el.classList.remove('active')
@@ -607,7 +625,6 @@ const subjectSelector = (id , index) => {
     document.getElementById('year_options').classList.remove('active');
 
     showHideOption();
-    
   }
 
 }
@@ -631,8 +648,10 @@ const yearOptionRemoveScience = (el) => {
   });
 }
 
-const clickSubjectResource = (resource, schoolYear) => {
 
+const onSocialStudiesHandle = () => {}
+
+const clickSubjectResource = (resource, schoolYear) => {
   if (year === '自然') {
     switch (true) {
       case semester === '上學期' && resource === 'wordwall' && schoolYear === 3:
