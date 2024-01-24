@@ -647,7 +647,18 @@ const clickSubjectResource = (resource, schoolYear) => {
       case semester === '上學期' && resource === 'quizlet' && schoolYear === 3:
         goToResource('https://docs.google.com/spreadsheets/d/1fnRurs3T5vZA4fOH06EBuRqv0vWiIrQ8W2tw_07gT4k/edit#gid=141887502')
         break;
-  
+      case semester === '下學期' && resource === 'kahoot' && schoolYear === 3:
+        goToResource('https://docs.google.com/spreadsheets/d/1GfIIoQfG1cB_xZCaBGGkeG4dXtx57cBtr8O2bBBTw8U/edit#gid=584550200')
+        break;
+      case semester === '下學期' && resource === 'quizizz' && schoolYear === 3:
+        goToResource('https://docs.google.com/spreadsheets/d/1-7KvxssZlLnBMFMFq0kXWDGQJr3v6gTqC2HklZ3sV7k/edit#gid=1871020819')
+        break;
+      case semester === '下學期' && resource === 'quizlet' && schoolYear === 3:
+        goToResource('https://docs.google.com/spreadsheets/d/1mFuiMfnUQceMJqi8_CD_F7oCBK7NpIuoQXecp1BJYHM/edit#gid=141887502')
+        break;
+      case semester === '下學期' && resource === 'wordwall' && schoolYear === 3:
+        goToResource('https://docs.google.com/spreadsheets/d/1EsIKspEsMxKOiLvnO36OTUHu8tywwlxujEHfmdXxR4o/edit#gid=0')
+        break;
   
       case semester === '上學期' && resource === 'wordwall' && schoolYear === 4:
         goToResource('https://docs.google.com/spreadsheets/d/1gFNvjTPAaKi3iygqjbTPyeyOKySDFJ6Ud9CJZt7V8Yw/edit#gid=1584925057')
@@ -660,6 +671,18 @@ const clickSubjectResource = (resource, schoolYear) => {
         break;
       case semester === '上學期' && resource === 'quizlet' && schoolYear === 4:
         goToResource('https://docs.google.com/spreadsheets/d/1fnRurs3T5vZA4fOH06EBuRqv0vWiIrQ8W2tw_07gT4k/edit#gid=1261575536')
+        break;
+      case semester === '下學期' && resource === 'kahoot' && schoolYear === 4:
+        goToResource('https://docs.google.com/spreadsheets/d/1GfIIoQfG1cB_xZCaBGGkeG4dXtx57cBtr8O2bBBTw8U/edit#gid=807048046')
+        break;
+      case semester === '下學期' && resource === 'quizizz' && schoolYear === 4:
+        goToResource('https://docs.google.com/spreadsheets/d/1-7KvxssZlLnBMFMFq0kXWDGQJr3v6gTqC2HklZ3sV7k/edit#gid=2005991381')
+        break;
+      case semester === '下學期' && resource === 'quizlet' && schoolYear === 4:
+        goToResource('https://docs.google.com/spreadsheets/d/1mFuiMfnUQceMJqi8_CD_F7oCBK7NpIuoQXecp1BJYHM/edit#gid=1261575536')
+        break;
+      case semester === '下學期' && resource === 'wordwall' && schoolYear === 4:
+        goToResource('https://docs.google.com/spreadsheets/d/1EsIKspEsMxKOiLvnO36OTUHu8tywwlxujEHfmdXxR4o/edit#gid=1584925057')
         break;
   
     
@@ -675,6 +698,18 @@ const clickSubjectResource = (resource, schoolYear) => {
       case semester === '上學期' && resource === 'quizlet' && schoolYear === 5:
         goToResource('https://docs.google.com/spreadsheets/d/1fnRurs3T5vZA4fOH06EBuRqv0vWiIrQ8W2tw_07gT4k/edit#gid=2025731435')
         break;
+      case semester === '下學期' && resource === 'kahoot' && schoolYear === 5:
+        goToResource('https://docs.google.com/spreadsheets/d/1GfIIoQfG1cB_xZCaBGGkeG4dXtx57cBtr8O2bBBTw8U/edit#gid=741572221')
+        break;
+      case semester === '下學期' && resource === 'quizizz' && schoolYear === 5:
+        goToResource('https://docs.google.com/spreadsheets/d/1-7KvxssZlLnBMFMFq0kXWDGQJr3v6gTqC2HklZ3sV7k/edit#gid=1343481458')
+        break;
+      case semester === '下學期' && resource === 'quizlet' && schoolYear === 5:
+        goToResource('https://docs.google.com/spreadsheets/d/1mFuiMfnUQceMJqi8_CD_F7oCBK7NpIuoQXecp1BJYHM/edit#gid=2025731435')
+        break;
+      case semester === '下學期' && resource === 'wordwall' && schoolYear === 5:
+        goToResource('https://docs.google.com/spreadsheets/d/1EsIKspEsMxKOiLvnO36OTUHu8tywwlxujEHfmdXxR4o/edit#gid=1934389515')
+        break;
   
   
       case semester === '上學期' && resource === 'wordwall' && schoolYear === 6:
@@ -688,6 +723,18 @@ const clickSubjectResource = (resource, schoolYear) => {
         break;
       case semester === '上學期' && resource === 'quizlet' && schoolYear === 6:
         goToResource('https://docs.google.com/spreadsheets/d/1fnRurs3T5vZA4fOH06EBuRqv0vWiIrQ8W2tw_07gT4k/edit#gid=1144388412')
+        break;
+      case semester === '下學期' && resource === 'kahoot' && schoolYear === 6:
+        goToResource('https://docs.google.com/spreadsheets/d/1GfIIoQfG1cB_xZCaBGGkeG4dXtx57cBtr8O2bBBTw8U/edit#gid=158759695')
+        break;
+      case semester === '下學期' && resource === 'quizizz' && schoolYear === 6:
+        goToResource('https://docs.google.com/spreadsheets/d/1-7KvxssZlLnBMFMFq0kXWDGQJr3v6gTqC2HklZ3sV7k/edit#gid=694640157')
+        break;
+      case semester === '下學期' && resource === 'quizlet' && schoolYear === 6:
+        goToResource('https://docs.google.com/spreadsheets/d/1mFuiMfnUQceMJqi8_CD_F7oCBK7NpIuoQXecp1BJYHM/edit#gid=1144388412')
+        break;
+      case semester === '下學期' && resource === 'wordwall' && schoolYear === 6:
+        goToResource('https://docs.google.com/spreadsheets/d/1EsIKspEsMxKOiLvnO36OTUHu8tywwlxujEHfmdXxR4o/edit#gid=263286272')
         break;
       default:
         break;
@@ -711,6 +758,21 @@ const clickSubjectResource = (resource, schoolYear) => {
       case semester === '上學期' && resource === 'coggle' && schoolYear === 3:
         goToResource('https://docs.google.com/spreadsheets/d/1tOmn7C0wIP_z4OfozvKaWdJXMPSf89za4qo97Q0jUPk/edit#gid=1584925057')
         break;
+      case semester === '下學期' && resource === 'kahoot' && schoolYear === 3:
+        goToResource('https://docs.google.com/spreadsheets/d/1zB_sC_GCKkBRUO6NlBy3dHy3YWOJshkQ8RbyK1obaO8/edit#gid=584550200')
+        break;
+      case semester === '下學期' && resource === 'quizizz' && schoolYear === 3:
+        goToResource('https://docs.google.com/spreadsheets/d/1XL1KUycAXfa0amk28nXuh_nPnKQCpEGu-ZFC0SF7Yxw/edit#gid=1871020819')
+        break;
+      case semester === '下學期' && resource === 'quizlet' && schoolYear === 3:
+        goToResource('https://docs.google.com/spreadsheets/d/1BXbNVxpMam8YIzw-xrL3R32RlICWzOCycvZA2iqLUNg/edit#gid=141887502')
+        break;
+      case semester === '下學期' && resource === 'wordwall' && schoolYear === 3:
+        goToResource('https://docs.google.com/spreadsheets/d/1n_AxK7kLOHSDyenQs6MNwNccqps8-CF8WP9ahpJmPT8/edit#gid=141887502')
+        break;
+      case semester === '下學期' && resource === 'coggle' && schoolYear === 3:
+        goToResource('https://docs.google.com/spreadsheets/d/1mjy192TNwUe1sWgAAZbRF8DujrMAg_cm6VT-0zgleOo/edit#gid=1584925057')
+        break;
   
   
       case semester === '上學期' && resource === 'wordwall' && schoolYear === 4:
@@ -727,6 +789,21 @@ const clickSubjectResource = (resource, schoolYear) => {
         break;
       case semester === '上學期' && resource === 'coggle' && schoolYear === 4:
         goToResource('https://docs.google.com/spreadsheets/d/1tOmn7C0wIP_z4OfozvKaWdJXMPSf89za4qo97Q0jUPk/edit#gid=416490095')
+        break;
+      case semester === '下學期' && resource === 'kahoot' && schoolYear === 4:
+        goToResource('https://docs.google.com/spreadsheets/d/1zB_sC_GCKkBRUO6NlBy3dHy3YWOJshkQ8RbyK1obaO8/edit#gid=807048046')
+        break;
+      case semester === '下學期' && resource === 'quizizz' && schoolYear === 4:
+        goToResource('https://docs.google.com/spreadsheets/d/1XL1KUycAXfa0amk28nXuh_nPnKQCpEGu-ZFC0SF7Yxw/edit#gid=1668464697')
+        break;
+      case semester === '下學期' && resource === 'quizlet' && schoolYear === 4:
+        goToResource('https://docs.google.com/spreadsheets/d/1BXbNVxpMam8YIzw-xrL3R32RlICWzOCycvZA2iqLUNg/edit#gid=573244975')
+        break;
+      case semester === '下學期' && resource === 'wordwall' && schoolYear === 4:
+        goToResource('https://docs.google.com/spreadsheets/d/1n_AxK7kLOHSDyenQs6MNwNccqps8-CF8WP9ahpJmPT8/edit#gid=2090638246')
+        break;
+      case semester === '下學期' && resource === 'coggle' && schoolYear === 4:
+        goToResource('https://docs.google.com/spreadsheets/d/1mjy192TNwUe1sWgAAZbRF8DujrMAg_cm6VT-0zgleOo/edit#gid=416490095')
         break;
   
     
@@ -745,6 +822,21 @@ const clickSubjectResource = (resource, schoolYear) => {
       case semester === '上學期' && resource === 'coggle' && schoolYear === 5:
         goToResource('https://docs.google.com/spreadsheets/d/1tOmn7C0wIP_z4OfozvKaWdJXMPSf89za4qo97Q0jUPk/edit#gid=812247135')
         break;
+      case semester === '下學期' && resource === 'kahoot' && schoolYear === 5:
+        goToResource('https://docs.google.com/spreadsheets/d/1zB_sC_GCKkBRUO6NlBy3dHy3YWOJshkQ8RbyK1obaO8/edit#gid=741572221')
+        break;
+      case semester === '下學期' && resource === 'quizizz' && schoolYear === 5:
+        goToResource('https://docs.google.com/spreadsheets/d/1XL1KUycAXfa0amk28nXuh_nPnKQCpEGu-ZFC0SF7Yxw/edit#gid=1768453216')
+        break;
+      case semester === '下學期' && resource === 'quizlet' && schoolYear === 5:
+        goToResource('https://docs.google.com/spreadsheets/d/1BXbNVxpMam8YIzw-xrL3R32RlICWzOCycvZA2iqLUNg/edit#gid=1695506235')
+        break;
+      case semester === '下學期' && resource === 'wordwall' && schoolYear === 5:
+        goToResource('https://docs.google.com/spreadsheets/d/1n_AxK7kLOHSDyenQs6MNwNccqps8-CF8WP9ahpJmPT8/edit#gid=1833055741')
+        break;
+      case semester === '下學期' && resource === 'coggle' && schoolYear === 5:
+        goToResource('https://docs.google.com/spreadsheets/d/1mjy192TNwUe1sWgAAZbRF8DujrMAg_cm6VT-0zgleOo/edit#gid=1670972641')
+        break;
   
   
       case semester === '上學期' && resource === 'wordwall' && schoolYear === 6:
@@ -758,6 +850,18 @@ const clickSubjectResource = (resource, schoolYear) => {
         break;
       case semester === '上學期' && resource === 'quizlet' && schoolYear === 6:
         goToResource('https://docs.google.com/spreadsheets/d/11N3nUB8-wkCLcWkYjUe6pen4aC-B9pCxLwOvXOjYV6A/edit#gid=829978289')
+        break;
+      case semester === '下學期' && resource === 'kahoot' && schoolYear === 6:
+        goToResource('https://docs.google.com/spreadsheets/d/1zB_sC_GCKkBRUO6NlBy3dHy3YWOJshkQ8RbyK1obaO8/edit#gid=158759695')
+        break;
+      case semester === '下學期' && resource === 'quizizz' && schoolYear === 6:
+        goToResource('https://docs.google.com/spreadsheets/d/1XL1KUycAXfa0amk28nXuh_nPnKQCpEGu-ZFC0SF7Yxw/edit#gid=1823763126')
+        break;
+      case semester === '下學期' && resource === 'quizlet' && schoolYear === 6:
+        goToResource('https://docs.google.com/spreadsheets/d/1BXbNVxpMam8YIzw-xrL3R32RlICWzOCycvZA2iqLUNg/edit#gid=217098870')
+        break;
+      case semester === '下學期' && resource === 'wordwall' && schoolYear === 6:
+        goToResource('https://docs.google.com/spreadsheets/d/1n_AxK7kLOHSDyenQs6MNwNccqps8-CF8WP9ahpJmPT8/edit#gid=1738499245')
         break;
       default:
         break;
