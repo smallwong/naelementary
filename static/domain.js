@@ -85,8 +85,6 @@ const onCoggleHandle = () => {
 }
 
 const yearSelector = (id, index) => {
-  console.log('id', id)
-  console.log('index', index)
   const el = document.getElementById(id);
   el.querySelectorAll('.button').forEach((el, idx) => {
     el.classList.remove('active')
@@ -100,13 +98,21 @@ const yearSelector = (id, index) => {
   if (semester && year) {
     document.getElementById('year_options').classList.add('active');
     document.getElementById('subject_options').classList.remove('active');
-    
     onWordwallHandle();
     onKahootHandle();
     onQuizizzHandle();
     onQuizletHandle();
     onCoggleHandle();
+
+    if (semester === "下學期"){
+      if (year === "社會" || year === "自然"){
+        document.getElementById('subject_options').classList.add('active');
+        document.getElementById('year_options').classList.remove('active');
+        showHideOption();
+      }
+    }
   }
+
 }
 
 const goToResource = (url) => {
@@ -608,8 +614,6 @@ const clickResource = (subject, resource) => {
 }
 
 const subjectSelector = (id , index) => {
-  console.log('semester', semester)
-  console.log('year', year)
   const el = document.getElementById(id);
   el.querySelectorAll('.button').forEach((el, idx) => {
     el.classList.remove('active')
@@ -620,7 +624,18 @@ const subjectSelector = (id , index) => {
     }
   })
 
-  if (semester && year) {
+  if (semester === "上學期" && year) {
+    document.getElementById('year_options').classList.add('active');
+    document.getElementById('subject_options').classList.remove('active');
+    
+    onWordwallHandle();
+    onKahootHandle();
+    onQuizizzHandle();
+    onQuizletHandle();
+    onCoggleHandle();
+  }
+
+  if (semester === "下學期" && year) {
     document.getElementById('subject_options').classList.add('active');
     document.getElementById('year_options').classList.remove('active');
 
