@@ -104,12 +104,10 @@ const yearSelector = (id, index) => {
     onQuizletHandle();
     onCoggleHandle();
 
-    if (semester === "下學期"){
-      if (year === "社會" || year === "自然"){
-        document.getElementById('subject_options').classList.add('active');
-        document.getElementById('year_options').classList.remove('active');
-        showHideOption();
-      }
+    if (year === "社會" || year === "自然"){
+      document.getElementById('subject_options').classList.add('active');
+      document.getElementById('year_options').classList.remove('active');
+      showHideOption();
     }
   }
 
@@ -708,6 +706,11 @@ const subjectSelector = (id , index) => {
     onQuizizzHandle();
     onQuizletHandle();
     onCoggleHandle();
+
+    if (year === "自然" || year === "社會"){
+      document.getElementById('subject_options').classList.add('active');
+      document.getElementById('year_options').classList.remove('active');
+    }
   }
 
   if (semester === "下學期" && year) {
