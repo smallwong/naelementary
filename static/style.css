@@ -62,7 +62,7 @@ body {
   flex-wrap: wrap;
 }
 .selector_box .selector .button_box .button {
-  width: 135px;
+  width: 100px;
   padding: 10px 0;
   border-radius: 10px;
   background-color: #f1d8d7;
@@ -98,13 +98,14 @@ body {
 }
 
 .subject_wrapper .subject_box .subject_group .subject {
-  width: 155px;
+  width: 100px;
   padding: 10px;
   background-color: #f1d8d7;
   color: #000;
   margin: 5px;
   border-radius: 10px;
   text-align: center;
+  font-size: 1.2em;
   cursor: pointer;
   display: none;
 }
@@ -152,21 +153,23 @@ body {
 
   .selector_box .selector .button_box .button,
   .subject_wrapper .subject_box .subject_group .subject {
-    width: 165px;
-    padding: 20px 0;
     font-size: 1.5em;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .container {
-    width: 50%;
+    width: 60%;
   }
 
   .selector_box .selector .button_box .button,
   .subject_wrapper .subject_box .subject_group .subject {
-    width: 195px;
-    padding: 30px 0;
-    font-size: 1.8em;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 75%;
   }
 }
