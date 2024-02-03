@@ -710,6 +710,7 @@ const subjectSelector = (id , index) => {
     if (year === "自然" || year === "社會"){
       document.getElementById('subject_options').classList.add('active');
       document.getElementById('year_options').classList.remove('active');
+      showHideOption();
     }
   }
 
