@@ -69,7 +69,7 @@ body {
   color: #000;
   text-align: center;
   margin: 10px;
-  font-size: 1.2em;
+  font-size: 1em;
   cursor: pointer;
 }
 .selector_box .selector .button_box .button.active {
@@ -105,7 +105,7 @@ body {
   margin: 5px 10px;
   border-radius: 10px;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
   cursor: pointer;
   display: none;
 }
